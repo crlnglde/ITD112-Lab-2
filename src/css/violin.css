@@ -1,0 +1,59 @@
+/* Container for the chart component */
+.violinchart-container {
+  display: flex;
+  flex-direction: column; /* Keep the title above the plots */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a; /* Soft shadow for depth */
+  margin: 20px;
+}
+
+.violinchart-container .js-plotly-plot {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+}
+
+/* Header style */
+.chart-container h2 {
+  color: #343a40; /* Dark gray for the header */
+  font-size: 1.8em; /* Increase font size */
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Plot styles */
+.vio {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 800px; /* Max width for each plot */
+  margin: 0 10px; /* Horizontal margin for spacing */
+}
+
+/* Flexbox to arrange plots in a row */
+.plot-container {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center plots horizontally */
+  align-items: flex-start; /* Align plots to the start of the container */
+  flex-wrap: nowrap; /* Ensure plots stay in one line */
+}
+
+/* Additional responsiveness */
+@media (max-width: 768px) {
+  .chart-container {
+    padding: 15px; /* Smaller padding on smaller screens */
+  }
+  
+  .chart-container h2 {
+    font-size: 1.5em; /* Smaller header on smaller screens */
+  }
+  
+  .vio {
+    max-width: 100%; /* Allow full width on small screens */
+    margin: 10px 0; /* Space plots vertically on small screens */
+  }
+
+  .plot-container {
+    flex-direction: column; /* Stack plots vertically on small screens */
+  }
+}

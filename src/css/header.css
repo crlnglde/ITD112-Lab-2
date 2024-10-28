@@ -1,0 +1,64 @@
+/* header.css */
+.app-header {
+    background-color: white;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-align: center;
+    position: fixed; /* Makes the header fixed */
+    top: 0;
+    font-family: Impact, fantasy;
+    border-bottom: 3px solid; /* Define border size */
+    border-image: linear-gradient(to right, #154880 30%, red 50%, #154880 70%) 1;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Fade and slide effect */
+  }
+  
+  .app-header.hidden {
+    transform: translateY(-100%); /* Slides the header up */
+    opacity: 0; /* Fades the header out */
+  }
+  
+  .app-header.visible {
+    transform: translateY(0); /* Slides the header back down */
+    opacity: 1; /* Fades the header in */
+  }
+  
+  .logo {
+    width: 220px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .app-header h2 {
+    display: flex;
+    align-items: center;
+    font-weight:lighter;
+    text-align: center;
+  }
+  
+  h2 .national {
+    color: #1c2f69; /* Dark blue color */
+    font-size: 40px;
+    margin-right: 5px;
+  }
+  
+  h2 .achievement {
+    color: transparent; /* Make text transparent */
+    font-size: 40px;
+    -webkit-text-stroke: 1.2px #1c2f69; /* Blue outline */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  h2 .test {
+    color: #9a1216; /* Dark red color */
+    font-size:40px;
+    margin-left: 5px;
+  }
+  
+  

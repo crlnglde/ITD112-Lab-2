@@ -1,0 +1,70 @@
+.charts-row {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: space-around; /* Space the charts evenly */
+    align-items: center; /* Vertically center the charts */
+    margin-top: 10px;
+    /*background-color: #1e75cc; /* Light background for contrast */
+  }
+
+  .charts-row1 {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: space-around; /* Space the charts evenly */
+    align-items: center; /* Vertically center the charts */
+    margin-bottom: 20px;
+    /*background-color: #58728b; /* Light background for contrast */
+  }
+  
+  .chart-item1 {
+    flex: 1; /* Allow each chart to take up equal space */
+    padding: 10px; /* Add padding around each chart */
+    max-width: 50%; 
+    /*margin-left: 200px;*/
+  }
+
+  .hhhh h2{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .chart-item1 canvas, .chart-item svg {
+    width: 100% !important; /* Ensure charts take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .chart-item2 {
+    margin-left: 0px;
+    flex: 1; /* Allow each chart to take up equal space */
+    padding: 10px; /* Add padding around each chart */
+    max-width: 50%; /* Limit the chart width to 50% of the row */
+  }
+  
+  .chart-item2 canvas, .chart-item svg {
+    width: 100% !important; /* Ensure charts take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .chart-item3 {
+    flex: 1; /* Allow each chart to take up equal space */
+    padding: 10px; /* Add padding around each chart */
+    max-width: 50%; 
+    /*margin-left: 200px;*/
+  }
+  
+  .chart-item3 canvas, .chart-item svg {
+    width: 100% !important; /* Ensure charts take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .chart-item4 {
+    flex: 1; /* Allow each chart to take up equal space */
+    padding: 10px; /* Add padding around each chart */
+    max-width: 50%; 
+    /*margin-left: 200px;*/
+  }
+  
+  .chart-item4 canvas, .chart-item svg {
+    width: 100% !important; /* Ensure charts take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

@@ -1,0 +1,45 @@
+/* socioeconomic.css */
+
+/* Styling for the chart container */
+.barchart-container {
+  display: flex;
+  flex-direction: column; /* Keep the title above the plots */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 20px;
+  }
+
+  .barchart-container .js-plotly-plot {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  /* Optional: Styles for the chart title */
+  .chart-container h2 {
+    color: #007bff; /* Title color matching the bar color */
+    margin-bottom: 15px; /* Margin below the title */
+    font-family: Arial, sans-serif; /* Font styling */
+    font-size: 24px; /* Title font size */
+  }
+  
+  /* Responsive styling for the plot */
+  @media (max-width: 768px) {
+    .chart-container {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .chart-container h2 {
+      font-size: 20px; /* Smaller title on mobile */
+    }
+  
+    /* Adjust plot dimensions for mobile */
+    .react-plotly.js {
+      width: 100% !important; /* Force plot width to full */
+      height: 300px !important; /* Set a fixed height for mobile */
+    }
+  }
+  
